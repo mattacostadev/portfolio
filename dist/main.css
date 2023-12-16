@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    #page {
+        background-color: #073415;
+    }
+
+    .window-card {
+        color: #CCF1C8;
+        background-color: #0B5A23;
+
+        border-style:solid;
+        border-color: #CCF1C8;
+        
+        border-width: 3px;
+
+        @apply flex flex-col
+    }
+
+    .window-card-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .window-card-content {
+        color: #073415;
+        background-color: #CCF1C8;
+        
+        padding-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+
+        b {
+            color: #EE2F2F;
+        }
+    }
+}

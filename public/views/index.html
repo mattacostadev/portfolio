@@ -1,0 +1,24 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/tailwind.css" />
+    <title>Matt Acosta</title>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.9"
+      integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="page">
+    <div class="static flex flex-row p-4">
+      {{template "contact_card" .Contact}}
+    </div>
+    <div class="static flex flex-col p-4">
+      {{template "timeline" .About}}
+    </div>
+  </body>
+</html>
+{{end}}
